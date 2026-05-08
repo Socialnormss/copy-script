@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Copy Script</title>
+</head>
+<body style="display:flex;justify-content:center;align-items:center;height:100vh;font-family:sans-serif;">
+
+<button onclick="copyText()" style="padding:20px 40px;font-size:24px;">
+  COPY SCRIPT
+</button>
+
+<script>
+function copyText() {
+  const text = `[
+    {
+        "domain": ".tradingview.com",
+        "expirationDate": 1770647903,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "_sp_ses.cf1a",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "*"
+    },
+    {
+        "domain": ".tradingview.com",
+        "expirationDate": 1801749726.761944,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "device_t",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "eHNkaUFROjU.eayL0mGnZ_fNmpLoxbWXgcWaoSBoaEQU6sAR7WG3N50"
+    },
+    {
+        "domain": ".tradingview.com",
+        "expirationDate": 1805206103.611314,
+        "hostOnly": false,
+        "httpOnly": false,
+        "name": "_sp_id.cf1a",
+        "path": "/",
+        "sameSite": "no_restriction",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "c83f711f-0dd6-4022-a761-eadc5bc6c239.1770645608.1.1770646104..e0158d56-d001-4a12-a829-4e140811877c..1a3bf1fb-8b10-4bd2-9863-32c1a2155fe1.1770645612689.8"
+    },
+    {
+        "domain": ".tradingview.com",
+        "expirationDate": 1778680926.762053,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "sessionid",
+        "path": "/",
+        "sameSite": "lax",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "j0n9cqbxw6t0celtht2q2p22ucd4dc7p"
+    },
+    {
+        "domain": ".tradingview.com",
+        "expirationDate": 1778680926.762085,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "sessionid_sign",
+        "path": "/",
+        "sameSite": "lax",
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "v3:krIpVlzRHIeLk9SQugEderQXyvVt5fuQfCz3dbyix2A="
+    }
+]`;
+
+  navigator.clipboard.writeText(text);
+
+  alert("Copied!");
+}
+</script>
+
+</body>
+</html>
